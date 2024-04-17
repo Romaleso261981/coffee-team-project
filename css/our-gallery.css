@@ -91,6 +91,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .our-gallery--wrapper {
+    display: none;
+  }
   .our-gallery--wrapper p {
     width: 400px;
     padding: 0 50px;
@@ -108,47 +111,64 @@
 }
 
 /* slider */
-
-.materials__slider {
-  transform: translate(0, -20.765027%); /* 76/366 */
+.our-gallery-slider {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
-.slider-materials__slide {
-  position: relative;
-  /* aspect-ratio: 88.797814%; */
-  width: 20.3125rem;
-  height: 22.875rem;
-}
-.slider-materials__slide img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-.slider-materials__pagination {
+.image-slider__slide {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0 0.3125rem 1rem 0.3125rem;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
-.slider-materials__pagination .swiper-pagination-bullet {
-  flex: 0 0 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.4;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+.our-gallery-slider h3 {
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+  /* Subtitle / Base */
+  font-family: "Josefin Sans";
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 55.9px */
 }
-.slider-materials__pagination .swiper-pagination-bullet-active {
-  opacity: 1;
+.swiper-slide img {
+  max-width: 100%;
+}
+.image-slider {
+  padding: 30px 0 70px 0;
+}
+.image-slider__image img {
+  max-width: 100%;
+  height: 100%;
+}
+.image-slider__image {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .our-gallery-slider {
+    display: block;
+  }
+  .our-gallery-grid {
+    display: none;
+  }
+  .our-gallery--wrapper {
+    display: none;
+  }
+  .our-gallery--btn {
+    margin-bottom: 50px;
+  }
+  .our-gallery-slider h3 {
+    margin-top: 50px;
+  }
+  .image-slider {
+    padding: 30px 0 50px 0;
+  }
+  .image-slider__image img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .image-slider__image {
+    text-align: center;
+  }
 }

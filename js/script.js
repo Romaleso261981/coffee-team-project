@@ -1,15 +1,21 @@
-const swiper = new Swiper('.materials__slider', {
-   loop: true,
-   autoplay: {
-      delay: 5000,
-   },
-   pagination: {
-      el: '.swiper-pagination',
-		clickable: true,
-   },
-});
+const swiper = new Swiper(".our-gallery-slider", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
-window.addEventListener('scroll', () => {
-	const header = document.querySelector('.header');
-	header.classList.toggle('sticky', window.scrollY > 0);
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination"
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar"
+  }
 });
