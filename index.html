@@ -21,20 +21,20 @@
       sizes="16x16"
       href="./img/favicon_io/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/hero-area.css" />
-    <link rel="stylesheet" href="css/our-best-offer.css" />
-    <link rel="stylesheet" href="css/our-gallery.css" />
-    <link rel="stylesheet" href="css/follow-us.css" />
-    <link rel="stylesheet" href="css/update-news.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero-area.css" />
+    <link rel="stylesheet" href="./css/our-best-offer.css" />
+    <link rel="stylesheet" href="./css/our-gallery.css" />
+    <link rel="stylesheet" href="./css/follow-us.css" />
+    <link rel="stylesheet" href="css/follow-us-max-width-600px.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="css/update-news.css">
+    <link rel="stylesheet" href="css/update-news-max-width-600px.css">
     <title>Coffee shop website</title>
+
+
   </head>
   <body>
     <div class="wrapper">
@@ -101,20 +101,25 @@
             </div>
             <button class="our-gallery--btn">LOAD MORE</button>
           </div>
-          <div class="our-gallery-slider swiper-container">
-            <h3>Our Gallery</h3>
-            <div class="image-slider__wrapper swiper-wrapper">
-              <div class="swiper-slide image-slider__slide">
-                <img src="img/our-gallery/Image1.png" alt="" />
+          <!-- start slider -->
+          <div class="our-gallery__slider slider-materials swiper hide">
+            <!-- Additional required wrapper -->
+            <div class="our-gallery-slider__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="slider-materials__slide swiper-slide">
+                <img src="./img/our-gallery/Image1.png" alt="img" />
               </div>
-              <div class="image-slider__slide swiper-slide">
-                <img src="img/our-gallery/Image2.png" alt="" />
+              <div class="slider-materials__slide swiper-slide">
+                <img src="./img/our-gallery/Image2.png" alt="img" />
               </div>
-              <div class="image-slider__slide swiper-slide">
-                <img src="img/our-gallery/Image3.png" alt="" />
+              <div class="slider-materials__slide swiper-slide">
+                <img src="./img/our-gallery/Image3.png" alt="img" />
               </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="slider-materials__pagination swiper-pagination"></div>
           </div>
+          <!-- end slider -->
         </section>
         <section class="follow-us">
           <div class="follow">
@@ -163,18 +168,23 @@
             </div>
             </div>
           </div>
+
+         
+
+
         </section>
       </main>
+
       <footer class="footer">
-        <div class="footer-content container">
-          <div class="footer-content__first footer-text">
+        <!-- <div class="footer-content">
+          <div class="footer-content__first">
             <a href="#" class="logo">
               <img src="img/hero-area/svg/logo.svg" alt="logo" />
             </a>
             <p>Creating a catchy tagline coffee shop business growth.</p>
             <span>+8801742-527137</span>
           </div>
-          <div class="footer-content__categies footer-text">
+          <div class="footer-content__categies">
             <h3>CATEGORIES</h3>
             <ul>
               <li>Ashley Szekeres Art</li>
@@ -182,7 +192,7 @@
               <li>Gift Certificates</li>
             </ul>
           </div>
-          <div class="footer-content__information footer-text">
+          <div class="footer-content__information">
             <h3>INFORMATION</h3>
             <ul>
               <li>Coffee Beans</li>
@@ -190,24 +200,14 @@
               <li>Blog</li>
             </ul>
           </div>
-          <div class="footer-content__social footer-text">
+          <div class="footer-content__follow-us">
             <h3>FOLLOW US</h3>
             <ul>
-              <li>
-                <img src="img/footer/svg/Facebook.svg" alt="social icon" />
-              </li>
-              <li>
-                <img src="img/footer/svg/Instagram.svg" alt="social icon" />
-              </li>
-              <li>
-                <img src="img/footer/svg/Linkdin.svg" alt="social icon" />
-              </li>
-              <li>
-                <img src="img/footer/svg/Twitter.svg" alt="social icon" />
-              </li>
-            </ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
           </div>
-        </div>
+        </div> -->
         <div class="copyright">
           <p>
             Copyright © 2024 Coffee, All rights reserved. Present by
@@ -216,7 +216,6 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
