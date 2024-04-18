@@ -33,7 +33,7 @@ body {
 /*налаштування адаптиву*/
 
 .container {
-  max-width: 80rem;
+  max-width: 1440px;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   margin: 0 auto;
