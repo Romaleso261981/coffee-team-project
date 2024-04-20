@@ -1,0 +1,57 @@
+@media screen and (max-width:400px ){
+    .best-offer{
+        margin:20px 20px;
+        font-size:15px ;
+        text-align: center;
+    }
+    .area-offer-img{
+        flex-direction: column;
+
+    }
+    .offer-img{
+        margin:10px 0 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 40px 15px 136px 0 rgba(0, 0, 0, 0.2);
+
+    }
+    .offer-img>img{
+        border-radius:22px;
+        width: 300px;
+        height: 250px;
+    }
+    .offer-img2{
+        justify-content: center;
+        text-align: center;
+        margin:10px 40px 0 40px ;
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 40px 15px 136px 0 rgba(0, 0, 0, 0.2);
+
+    }
+    .offer-img2>img{
+        border-radius:22px;
+        width: 300px;
+        height: 250px;
+    }
+    .follow-img-1{
+     margin: 0;
+    }
+    .follow-img-2{
+     margin-top: 5px;
+    }
+
+
+
+
+
+
+    
+}
