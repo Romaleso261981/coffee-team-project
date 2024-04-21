@@ -133,4 +133,7 @@ body {
   .follow-img-2 {
     margin-top: 5px;
   }
+  .offer-img2 > h3:nth-child(2) {
+    padding: 0;
+  }
 }
