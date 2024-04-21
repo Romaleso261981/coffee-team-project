@@ -76,3 +76,14 @@ openButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   toggleCard({ card: nobMenu, classList: "open" });
 });
+
+// section loadMore
+
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+const section = document.getElementById("loadMore");
+
+loadMoreBtn.addEventListener("click", () => {
+  console.log("section", section);
+  toggleCard({ card: section, classList: "hide" });
+  toggleCard({ card: loadMoreBtn, classList: "hide" });
+});

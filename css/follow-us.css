@@ -10,6 +10,7 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 20px;
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 450px) {
@@ -22,14 +23,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  .follow p a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 20px;
-  }
+}
+.follow p a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 20px;
 }
 .follow > p:nth-child(1) {
   padding: 70px 0 50px 0;
