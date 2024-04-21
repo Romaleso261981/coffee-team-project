@@ -21,22 +21,20 @@
       sizes="16x16"
       href="./img/favicon_io/favicon-16x16.png"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/hero-area.css" />
-    <link rel="stylesheet" href="./css/our-best-offer.css" />
-    <link rel="stylesheet" href="css/our-best-offer-max-width-400px.css">
-    <link rel="stylesheet" href="./css/our-gallery.css" />
-    <link rel="stylesheet" href="./css/follow-us.css" />
-    <link rel="stylesheet" href="css/follow-us-max-width-400px.css">
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="css/update-news.css">
-    <link rel="stylesheet" href="css/update-news-max-width-400px.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero-area.css" />
+    <link rel="stylesheet" href="css/our-best-offer.css" />
+    <link rel="stylesheet" href="css/our-gallery.css" />
+    <link rel="stylesheet" href="css/follow-us.css" />
+    <link rel="stylesheet" href="css/update-news.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Coffee shop website</title>
-
-
-
   </head>
   <body>
     <div class="wrapper">
@@ -44,18 +42,28 @@
         <a href="#" class="logo">
           <img src="img/hero-area/svg/logo.svg" alt="logo" />
         </a>
-        <div class="burger">
+        <div id="burger" class="burger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
         <nav class="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#menu">Menu</a>
-          <a href="#products">Review</a>
-          <a href="#review">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Menu</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
         </nav>
+        <div id="mobile" class="mobMenu">
+          <nav class="mobile-menu">
+            <a href="/">Home</a>
+            <a href="/">About Us</a>
+            <a href="/">Menu</a>
+            <a href="/">Review</a>
+            <a href="/">Contact</a>
+            <button id="close" class="close">x</button>
+          </nav>
+        </div>
       </header>
       <main class="page">
         <section class="hero-area">
@@ -68,34 +76,81 @@
                 The coffee ideas shared by these generators are not cool at all,
                 as they are not a human being.
               </p>
-              <button class="hero-area__btn">By now</button>
+              <button id="order-modal-open" class="hero-area__btn">
+                By now
+              </button>
             </div>
           </div>
-          <div class="hero-area__right"></div>
+          <div id="orderModal" class="hero-area__orderModal">
+            <div class="hero-area__orderModal--content">
+              <h2>Order Now</h2>
+              <h4>
+                A coffee shop will help you to tell the audience what your
+                business.
+              </h4>
+              <form action="#" class="hero-area__form">
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Your Email"
+                  class="hero-area__input"
+                />
+                <input
+                  id="phone"
+                  type="text"
+                  placeholder="Your Phone"
+                  class="hero-area__input"
+                />
+                <textarea
+                  class="hero-area__textarea"
+                  name="message"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button id="hero-area__submit" class="hero-area__submit">
+                  Submit
+                </button>
+              </form>
+              <div id="hero-area__close" class="hero-area__close">x</div>
+            </div>
+          </div>
         </section>
         <section class="our-best-offer">
           <div class="best-offer">
             <h3>That is Our Best Offer</h3>
-            <p>A coffee shop will help you to tell the audience what your <br> business.</p>
+            <p>
+              A coffee shop will help you to tell the audience what your <br />
+              business.
+            </p>
             <div class="area-offer-img">
               <div class="offer-img">
-                <img src="img/our-best-offer/Photo1.png" alt="">
+                <img src="img/our-best-offer/Photo1.png" alt="" />
                 <h3>$5.99</h3>
                 <h3>Brazilian coffe beans</h3>
-                <p>Coffee that’s always you handle <br> your own the way you like. </p>
+                <p>
+                  Coffee that’s always you handle <br />
+                  your own the way you like.
+                </p>
               </div>
               <div class="offer-img">
-               <img src="img/our-best-offer/Photo2.png" alt="">
-                  <h3>$4.99</h3>
-                  <h3>Vietnam coffe beans</h3>
-                  <p>Coffee that’s always you handle <br> your own the way you like. </p>
-            </div>
-                <div class="offer-img2">
-                  <img src="img/our-best-offer/Photo3.png" alt="">
-                  <h3 style="margin-top: 14px">$5.99</h3>
-                  <h3>Indonesian coffe beans</h3>
-                  <p>Coffee that’s always you <br> handle your own the way you like. </p>
-                </div>
+                <img src="img/our-best-offer/Photo2.png" alt="" />
+                <h3>$4.99</h3>
+                <h3>Vietnam coffe beans</h3>
+                <p>
+                  Coffee that’s always you handle <br />
+                  your own the way you like.
+                </p>
+              </div>
+              <div class="offer-img2">
+                <img src="img/our-best-offer/Photo3.png" alt="" />
+                <h3 style="margin-top: 14px">$5.99</h3>
+                <h3>Indonesian coffe beans</h3>
+                <p>
+                  Coffee that’s always you <br />
+                  handle your own the way you like.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -126,92 +181,127 @@
                 <img src="img/our-gallery/Image6.png" alt="img" />
               </div>
             </div>
-            <button class="our-gallery--btn">LOAD MORE</button>
+            <button>LOAD MORE</button>
           </div>
-          <!-- start slider -->
-          <div class="our-gallery__slider slider-materials swiper hide">
-            <!-- Additional required wrapper -->
-            <div class="our-gallery-slider__wrapper swiper-wrapper">
-              <!-- Slides -->
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image1.png" alt="img" />
-              </div>
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image2.png" alt="img" />
-              </div>
-              <div class="slider-materials__slide swiper-slide">
-                <img src="./img/our-gallery/Image3.png" alt="img" />
+          <div class="slide-wrapper">
+            <div class="our-gallery-slider swiper-container">
+              <h3>Our Gallery</h3>
+              <div class="image-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide image-slider__slide">
+                  <img src="img/our-gallery/Image1.png" alt="image" />
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <img src="img/our-gallery/Image2.png" alt="image" />
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <img src="img/our-gallery/Image3.png" alt="image" />
+                </div>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="slider-materials__pagination swiper-pagination"></div>
           </div>
-          <!-- end slider -->
         </section>
         <section class="follow-us">
           <div class="follow">
-          <p style="color: #FF4B32">Follow US</p>
-          <h3>Have an inquiry?<br>
-            Text or call and ask Something.</h3>
-         <p><img class="follow-img-1" src="img/follow-us/Telephone.svg" alt=""> +8801742-527137</p>
-          <p><img class="follow-img-2"src="img/follow-us/gmaillogo.svg" alt=""> mdmaksedur17@gmail.com</p>
-          <div class="nav-follow-us">
-            <a href="#"><img src="img/follow-us/Twitter.svg" alt=""></a>
-            <a href="#"><img src="img/follow-us/Facebook.svg" alt=""></a>
-            <a href="#"><img src="img/follow-us/Instagram.svg" alt=""></a>
-            <a href="#"><img src="img/follow-us/Linkdin.svg" alt=""></a>
-          </div>
+            <p style="color: #ff4b32">Follow US</p>
+            <h3>
+              Have an inquiry?<br />
+              Text or call and ask Something.
+            </h3>
+            <p>
+              <img
+                class="follow-img-1"
+                src="img/follow-us/Telephone.svg"
+                alt=""
+              />
+              +8801742-527137
+            </p>
+            <p>
+              <img
+                class="follow-img-2"
+                src="img/follow-us/gmaillogo.svg"
+                alt=""
+              />
+              mdmaksedur17@gmail.com
+            </p>
+            <div class="nav-follow-us">
+              <a href="#"><img src="img/follow-us/Twitter.svg" alt="" /></a>
+              <a href="#"><img src="img/follow-us/Facebook.svg" alt="" /></a>
+              <a href="#"><img src="img/follow-us/Instagram.svg" alt="" /></a>
+              <a href="#"><img src="img/follow-us/Linkdin.svg" alt="" /></a>
+            </div>
           </div>
         </section>
         <section class="update-news">
           <div class="news-update">
-          <h3>Update News</h3>
-            <p>A cup of brewed coffee represents a contribution of up to 1.8 grams<br>
-              fiber of the recommended.</p>
+            <h3>Update News</h3>
+            <p>
+              A cup of brewed coffee represents a contribution of up to 1.8
+              grams<br />
+              fiber of the recommended.
+            </p>
           </div>
           <div class="area-update-news">
             <div class="update-img">
-              <img src="img/update-news/Image-update.png" height="300" width="362" alt=""/>
+              <img
+                src="img/update-news/Image-update.png"
+                height="300"
+                width="362"
+                alt=""
+              />
               <div class="update-text">
                 <h3>Coffe beans</h3>
-                <p>These advertising mottos are targeted to the 56% of coffee drinking consumers.</p>
+                <p>
+                  These advertising mottos are targeted to the 56% of coffee
+                  drinking consumers.
+                </p>
                 <p>Learn More</p>
               </div>
             </div>
             <div class="update-img">
-              <img src="img/update-news/Image-update2.png" height="300" width="362" alt=""/>
+              <img
+                src="img/update-news/Image-update2.png"
+                height="300"
+                width="362"
+                alt=""
+              />
               <div class="update-text">
                 <h3>Coffe beans</h3>
-                <p>These advertising mottos are targeted to the 56% of coffee drinking consumers.</p>
+                <p>
+                  These advertising mottos are targeted to the 56% of coffee
+                  drinking consumers.
+                </p>
                 <p>Learn More</p>
               </div>
             </div>
             <div class="update-img">
-              <img src="img/update-news/Imageupdate-3.png" height="300" width="362" alt=""/>
+              <img
+                src="img/update-news/Imageupdate-3.png"
+                height="300"
+                width="362"
+                alt=""
+              />
               <div class="update-text">
-              <h3>Coffe beans</h3>
-              <p>These advertising mottos are targeted to the 56% of coffee drinking consumers.</p>
-              <p>Learn More</p>
-            </div>
+                <h3>Coffe beans</h3>
+                <p>
+                  These advertising mottos are targeted to the 56% of coffee
+                  drinking consumers.
+                </p>
+                <p>Learn More</p>
+              </div>
             </div>
           </div>
-
-         
-
-
         </section>
       </main>
-
       <footer class="footer">
-        <!-- <div class="footer-content">
-          <div class="footer-content__first">
+        <div class="footer-content container">
+          <div class="footer-content__first footer-text">
             <a href="#" class="logo">
               <img src="img/hero-area/svg/logo.svg" alt="logo" />
             </a>
             <p>Creating a catchy tagline coffee shop business growth.</p>
             <span>+8801742-527137</span>
           </div>
-          <div class="footer-content__categies">
+          <div class="footer-content__categies footer-text">
             <h3>CATEGORIES</h3>
             <ul>
               <li>Ashley Szekeres Art</li>
@@ -219,7 +309,7 @@
               <li>Gift Certificates</li>
             </ul>
           </div>
-          <div class="footer-content__information">
+          <div class="footer-content__information footer-text">
             <h3>INFORMATION</h3>
             <ul>
               <li>Coffee Beans</li>
@@ -227,14 +317,24 @@
               <li>Blog</li>
             </ul>
           </div>
-          <div class="footer-content__follow-us">
+          <div class="footer-content__social footer-text">
             <h3>FOLLOW US</h3>
             <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
+              <li>
+                <img src="img/footer/svg/Facebook.svg" alt="social icon" />
+              </li>
+              <li>
+                <img src="img/footer/svg/Instagram.svg" alt="social icon" />
+              </li>
+              <li>
+                <img src="img/footer/svg/Linkdin.svg" alt="social icon" />
+              </li>
+              <li>
+                <img src="img/footer/svg/Twitter.svg" alt="social icon" />
+              </li>
+            </ul>
           </div>
-        </div> -->
+        </div>
         <div class="copyright">
           <p>
             Copyright © 2024 Coffee, All rights reserved. Present by
@@ -243,6 +343,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,8 +1,0 @@
-@media screen and (max-width:400px ) {
-    .follow-us{
-        font-size:15px ;
-        flex-direction: column;
-        width: 100%;
-        height:500px ;
-    }
-}

@@ -1,81 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-body{
-    font-size: 24px;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  font-size: 24px;
 }
-.our-best-offer{
-    width: 100vw;
+.our-best-offer {
+  width: 100vw;
+}
+.best-offer {
+  flex-direction: column;
+  margin: 0 144px;
+}
+.area-offer-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.best-offer > h3 {
+  margin-top: 100px;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.27em;
+}
+.best-offer > p {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.7;
+}
+.offer-img {
+  margin-top: 60px;
+  flex-direction: column;
+}
+.area-offer-img h3:nth-child(2) {
+  color: #0c0d0c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.area-offer-img h3:nth-child(3) {
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.area-offer-img p {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.67em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.6;
+}
+.offer-img {
+  width: 310px;
+  height: 450px;
+}
+.offer-img2 {
+  margin-top: 55px;
+  width: 310px;
+  height: 450px;
+  margin-left: 42px;
+}
+.follow-img-1 {
+  margin-top: 5px;
+}
+.follow-img-2 {
+  margin-top: 12px;
+}
 
-}
-.best-offer{
+@media screen and (max-width: 400px) {
+  .best-offer {
+    margin: 20px 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .area-offer-img {
     flex-direction: column;
-    margin:0 144px;
-}
-.area-offer-img{
+  }
+  .offer-img {
+    margin: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-.best-offer>h3{
-    margin-top: 100px;
-    color: #000;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.8em;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 130%;
-    letter-spacing:0.27em;
-}
-.best-offer>p{
-    color: #000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.75em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    opacity: 0.7;
-}
-.offer-img{
-    margin-top: 60px;
-    flex-direction: column;
-}
-.area-offer-img h3:nth-child(2){
-    color: #0C0D0C;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-}
-.area-offer-img h3:nth-child(3){
-    color: #000;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 130%;
-}
-.area-offer-img p{
-    color: #000;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.67em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    opacity: 0.6;
-}
-.offer-img{
-    width: 310px ;
-    height: 450px;
-}
-.offer-img2{
-    margin-top: 55px;
-    width: 310px ;
-    height: 450px;
-    margin-left:42px ;
-}
-.follow-img-1{
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 40px 15px 136px 0 rgba(0, 0, 0, 0.2);
+  }
+  .offer-img > img {
+    border-radius: 22px;
+    width: 300px;
+    height: 250px;
+  }
+  .offer-img2 {
+    justify-content: center;
+    text-align: center;
+    margin: 10px 40px 0 40px;
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 40px 15px 136px 0 rgba(0, 0, 0, 0.2);
+  }
+  .offer-img2 > img {
+    border-radius: 22px;
+    width: 300px;
+    height: 250px;
+  }
+  .follow-img-1 {
+    margin: 0;
+  }
+  .follow-img-2 {
     margin-top: 5px;
-}
-.follow-img-2{
-    margin-top: 12px;
+  }
 }
