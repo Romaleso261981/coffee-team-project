@@ -80,7 +80,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .update-news {
-    margin: 30px 30px;
+    margin-top: 30px;
   }
   .news-update h3 {
     font-size: 25px;
