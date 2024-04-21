@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .hero-area__title {
   margin-top: 120px;
@@ -66,7 +66,17 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 28.8px */
+  line-height: 160%;
+}
+@media screen and (max-width: 768px) {
+  /* .hero-area__title {
+    max-width: 350px;
+  } */
+  .hero-area__left--content {
+    top: 15%;
+    left: 10%;
+    width: 450px;
+  }
 }
 @media screen and (max-width: 450px) {
   .hero-area__left--content {
