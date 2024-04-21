@@ -82,7 +82,10 @@
     width: 99%;
   }
   .hero-area__btn {
-    margin-top: 0;
+    margin-top: 20px;
+  }
+  .hero-area__title {
+    margin-top: 60px;
   }
 }
 /* modal */
