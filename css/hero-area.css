@@ -29,13 +29,14 @@
   top: 15%;
   left: 5%;
   width: 524px;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .hero-area__title {
+  margin-top: 120px;
   color: var(--white-color);
   font-size: 58px;
   font-weight: 500;
@@ -43,7 +44,7 @@
 }
 .hero-area__description {
   color: var(--white-color);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   margin-top: 26px;
   font-style: normal;
@@ -61,18 +62,11 @@
   margin-top: 64px;
   background: #ff4b32;
   color: var(--white-color);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 160%; /* 28.8px */
-}
-@media screen and (max-width: 1170px) {
-  .hero-area__left--content {
-    top: 30%;
-    left: 5%;
-    width: 424px;
-  }
 }
 @media screen and (max-width: 450px) {
   .hero-area__left--content {
@@ -86,6 +80,9 @@
   }
   .hero-area__right {
     width: 99%;
+  }
+  .hero-area__btn {
+    margin-top: 0;
   }
 }
 /* modal */
@@ -107,9 +104,8 @@
 }
 .hero-area__orderModal--content {
   position: relative;
-  width: 80%;
-  height: 500px;
-  padding: 20px;
+  height: 530px;
+  padding: 30px 20px 20px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -118,7 +114,7 @@
   width: 100%;
 }
 .hero-area__orderModal--content h4 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -159,7 +155,7 @@
   margin-top: 20px;
   background: #ff4b32;
   color: var(--white-color);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -243,9 +239,8 @@
     margin-top: 20px;
     background: #ff4b32;
     color: var(--white-color);
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    margin-top: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 160%;

@@ -3,16 +3,22 @@ body {
   font-size: 24px;
 }
 .our-best-offer {
+  display: flex;
+  flex-wrap: wrap;
   width: 100vw;
+
 }
 .best-offer {
   flex-direction: column;
-  margin: 0 144px;
+
 }
 .area-offer-img {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+
 }
 .best-offer > h3 {
   margin-top: 100px;
@@ -36,6 +42,8 @@ body {
 .offer-img {
   margin-top: 60px;
   flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 .area-offer-img h3:nth-child(2) {
   color: #0c0d0c;
@@ -81,7 +89,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .best-offer {
-    margin: 20px 20px;
+    margin: 20px 0;
     font-size: 15px;
     text-align: center;
   }
@@ -93,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 340px;
     height: 380px;
     border-radius: 20px;
     background: #fff;
