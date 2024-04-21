@@ -11,12 +11,6 @@ body{
   background-size: cover;
   padding-top: 20px;
 }
-
-@media screen and (max-width: 450px) {
-  .follow-us {
-    background-position: left;
-  }
-}
 .follow{
   display: flex;
   justify-content: center;
@@ -74,6 +68,13 @@ body{
   justify-content: space-evenly;
   align-items: center;
 }
+.follow-img-1{
+  margin-top: 5px;
+}
+.follow-img-2{
+  margin-top: 12px;
+}
+
 
 
 
