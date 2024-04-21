@@ -80,10 +80,17 @@ closeButton.addEventListener("click", () => {
 // section loadMore
 
 const loadMoreBtn = document.getElementById("loadMoreBtn");
+const loadMoreBtn2 = document.getElementById("loadMoreBtn2");
 const section = document.getElementById("loadMore");
+const section2 = document.getElementById("loadMore2");
 
 loadMoreBtn.addEventListener("click", () => {
   console.log("section", section);
   toggleCard({ card: section, classList: "hide" });
   toggleCard({ card: loadMoreBtn, classList: "hide" });
+});
+
+loadMoreBtn2.addEventListener("click", () => {
+  toggleCard({ card: section2, classList: "hide" });
+  toggleCard({ card: loadMoreBtn2, classList: "hide" });
 });

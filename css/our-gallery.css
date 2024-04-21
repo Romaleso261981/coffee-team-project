@@ -85,6 +85,7 @@
     width: 100%;
     display: inline-block;
   }
+
   .our-gallery--wrapper p {
     width: 400px;
     padding: 0 50px;
@@ -120,6 +121,7 @@
   font-weight: 600;
   line-height: 130%;
 }
+
 .swiper-slide img {
   max-width: 100%;
 }
@@ -170,6 +172,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+}
+.loadMore button {
+  margin-top: 50px;
+}
+.loadMore div {
+  width: 362px;
+}
+.our-gallery__item > img {
+  width: 100%;
 }
 .hide {
   display: none;
