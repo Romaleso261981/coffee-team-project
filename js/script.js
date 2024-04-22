@@ -63,7 +63,7 @@ btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const message = `email: ${email.value}  phone: ${phone.value} message: ${msg.value}`;
   sendMessage(message)
-      .then(() => { alert("message sent") });
+      .then(() => { console.log("message sent") });
   (email.value = ""), (msg.value = ""), (phone.value = "");
   toggleCard({ card: orderModal, classList: "show" });
 });
