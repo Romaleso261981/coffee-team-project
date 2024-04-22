@@ -67,6 +67,12 @@
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
+  transition: background-color 0.3s, color 0.3s;
+}
+.hero-area__btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid darkred;
 }
 @media screen and (max-width: 768px) {
   /* .hero-area__title {

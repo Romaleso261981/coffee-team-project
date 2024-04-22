@@ -97,16 +97,15 @@
   font-weight: 600;
   line-height: 160%;
   letter-spacing: 1.6px;
-  border: none;
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
+  border: 1px solid #c8e6e6;
   transition: background-color 0.3s, color 0.3s;
 }
 .our-best-offer__card button:hover {
-    background-color: #000;
-    color: #fff;
-
+    background-color: #c8e6e6;
+    color: #f30303;
 }
 @media screen and (max-width: 1145px) {
   .our-best-offer__cards {
