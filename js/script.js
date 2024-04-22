@@ -62,7 +62,8 @@ orderModalClose.addEventListener("click", () => {
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   const message = `email: ${email.value}  phone: ${phone.value} message: ${msg.value}`;
-  sendMessage(message);
+  sendMessage(message)
+      .then(() => { alert("message sent") });
   (email.value = ""), (msg.value = ""), (phone.value = "");
   toggleCard({ card: orderModal, classList: "show" });
 });
@@ -93,4 +94,41 @@ loadMoreBtn.addEventListener("click", () => {
 loadMoreBtn2.addEventListener("click", () => {
   toggleCard({ card: section2, classList: "hide" });
   toggleCard({ card: loadMoreBtn2, classList: "hide" });
+});
+
+// our-best-offer
+
+const openBtn1 = document.getElementById("card--detail-1");
+const openBtn2 = document.getElementById("card--detail-2");
+const openBtn3 = document.getElementById("card--detail-3");
+
+const closeBtn1 = document.getElementById("card--detail-1__close");
+const closeBtn2 = document.getElementById("card--detail-2__close");
+const closeBtn3 = document.getElementById("card--detail-3__close");
+
+const card1 = document.getElementById("card-1");
+const card2 = document.getElementById("card-2");
+const card3 = document.getElementById("card-3");
+
+openBtn1.addEventListener("click", () => {
+  toggleCard({ card: card1, classList: "show-card" });
+});
+
+closeBtn1.addEventListener("click", () => {
+  toggleCard({ card: card1, classList: "show-card" });
+});
+
+openBtn2.addEventListener("click", () => {
+  toggleCard({ card: card2, classList: "show-card" });
+});
+
+closeBtn2.addEventListener("click", () => {
+  toggleCard({ card: card2, classList: "show-card" });
+});
+openBtn3.addEventListener("click", () => {
+  toggleCard({ card: card3, classList: "show-card" });
+});
+
+closeBtn3.addEventListener("click", () => {
+  toggleCard({ card: card3, classList: "show-card" });
 });
