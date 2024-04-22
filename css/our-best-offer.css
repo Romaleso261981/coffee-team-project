@@ -55,6 +55,7 @@
 }
 .our-best-offer__card span {
   color: #0c0d0c;
+  margin-top: 35px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -66,16 +67,17 @@
   margin-right: 5px;
 }
 .our-best-offer__card h3 {
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 300px;
   color: #000;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
-  letter-spacing: 3.6px;
 }
 .our-best-offer__card p {
+  width: 250px;
   margin-top: 20px;
   color: #000;
   font-family: "Open Sans", sans-serif;
@@ -83,13 +85,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  opacity: 0.7;
 }
 .our-best-offer__card button {
   width: 100%;
   height: 50px;
-  background-color: #000;
-  color: #fff;
+  background-color: #f3f3e9;
+  color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -100,6 +101,12 @@
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.our-best-offer__card button:hover {
+    background-color: #000;
+    color: #fff;
+
 }
 @media screen and (max-width: 1145px) {
   .our-best-offer__cards {
