@@ -23,7 +23,7 @@
 /*Загальні стилі =================================================================================================================*/
 
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   color: #646d70;
 }
@@ -51,7 +51,7 @@ body {
 /*модулі*/
 
 .title {
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   color: #fff;
   line-height: 130%;
   font-size: 1.875rem;
@@ -74,8 +74,3 @@ body {
   flex: 1 1 auto;
 }
 
-@import url("follow-us.css");
-@import url("hero-area.css");
-@import url("our-best-offer.css");
-@import url("our-gallery.css");
-@import url("update-news.css");
